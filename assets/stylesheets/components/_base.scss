@@ -1,6 +1,46 @@
-.card {
-    background: #f9f;
-    .card-title {
-        color: aquamarine;
-    }
+header {
+    background-image: url("../img/house1.jpg");
+    min-height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @extend .py-4;
+}
+.page-link {
+    border-radius: 50rem!important; // !IMPORTANT;
+    margin-right: 10px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-style: none;
+}
+.zoom {
+    transition: transform .2s;
+}
+.zoom:hover {
+    transform: scale(1.5);
+}
+a:hover {
+    color: #007bff;
+}
+.no-underline {
+    text-decoration: none;
+}
+.img-rounded {
+    width: 65px;
+    border-radius: 50%;
+    height: 65px;
+    object-fit: cover;
+}
+.img-width {
+    width: 120px;
+    height: 120px;
+}
+.menu {
+    top: 50%;
+    transform: translatey(-50%);
+    position: fixed;
+    z-index: 9999;
+}
+.card-lg .card-body {
+    padding: 2rem;
 }
